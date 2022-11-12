@@ -1,0 +1,92 @@
+.code-line {
+  font-size: 1.25rem;
+  display: grid;
+  grid-template: 'status adresse raw operator argument comment' 1fr / 30px 36px 60px auto auto 1fr;
+  font-family: var(--code-font);
+  line-height: 1;
+  width: 100%;
+  column-gap: 20px;
+  padding: 5px;
+  border: 2px solid transparent;
+}
+
+.code-line.selected {
+  border-color: var(--text-color-dark2);
+}
+
+.code-line.error .code-line__address {
+  color: var(--error-color);
+}
+
+.code-line__status {
+  grid-area: status;
+  color: var(--text-color-dark1);
+}
+
+.code-line__address {
+  grid-area: adresse;
+  color: var(--text-color-dark2);
+  font-weight: 700;
+}
+
+.code-line__raw {
+  grid-area: raw;
+  color: var(--text-color-dark1);
+  font-weight: 700;
+}
+
+.code-line__operator {
+  grid-area: operator;
+  display: block;
+  font-weight: 700;
+}
+
+.code-line__operator-definied {
+  color: var(--primary-color);
+}
+
+.code-line__argument {
+  grid-area: argument;
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.code-line__comment {
+  grid-area: comment;
+  color: var(--text-color-dark1);
+  font-weight: 400;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.code-line__comment::-webkit-scrollbar {
+  height: 0;
+}
+
+/* INPUT STYLES */
+
+input.code-line__address {
+  color: var(--text-color-dark2);
+  font-weight: 700;
+  margin-right: 40px;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1.25rem;
+  font-family: var(--code-font);
+  width: 36px;
+}
+
+input.code-line__content {
+  border: none;
+  background: none;
+  outline: none;
+  color: var(--text-color);
+  font-weight: 700;
+  margin-right: 40px;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 1.25rem;
+  font-family: var(--code-font);
+}

@@ -1,0 +1,23 @@
+.navbar {
+  grid-column: span 2;
+  width: 100%;
+  padding: 20px 0;
+  font-family: var(--code-font);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar__item-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-right: auto;
+  color: var(--text-color);
+}
+
+.navbar__item {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color-dark1) !important;
+  text-decoration: underline;
+}

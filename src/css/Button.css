@@ -1,0 +1,40 @@
+.button {
+  background-color: unset;
+  font-family: var(--code-font);
+  font-size: 1.125rem;
+  padding: 10px 20px;
+  border: 2px solid var(--btn-color);
+  color: var(--btn-color);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.button-color--primary {
+  --btn-color: var(--primary-color);
+}
+
+.button-color--secondary {
+  --btn-color: var(--text-color);
+}
+
+.button-color--error {
+  --btn-color: var(--error-color);
+}
+
+.button-type--link {
+  --btn-color: var(--text-color-dark1);
+  text-decoration: underline;
+  border: none;
+}
+
+/*TODO: add active,hover and focus style */
+/* .button:not(:disabled):hover {
+  background-color: var(--text-color-dark2);
+} */
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

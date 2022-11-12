@@ -1,0 +1,24 @@
+.terminal-outer {
+  height: 80%;
+  overflow: auto;
+  padding-top: 10px;
+}
+.terminal {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-height: 100%;
+}
+
+.terminal-outer::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--terminal-background);
+}
+
+.terminal-outer::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+
+.terminal__program__line {
+  margin-top: 20px;
+}

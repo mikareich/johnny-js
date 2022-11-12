@@ -1,0 +1,11 @@
+/* https://tailwindcss.com/docs/customizing-colors#default-color-palette neutral color palette */
+:root {
+  --terminal-background: #171717;
+  --text-color: #d4d4d4;
+  --text-color-dark1: #a1a1a1;
+  --text-color-dark2: #737373;
+  --primary-color: #8b5cf6;
+  --error-color: #f87171;
+
+  --code-font: 'JetBrains Mono', monospace;
+}

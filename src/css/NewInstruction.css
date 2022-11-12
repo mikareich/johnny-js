@@ -1,0 +1,34 @@
+.newInstruction {
+  padding: 20px 40px;
+  font-size: 1.25rem;
+  font-family: var(--code-font);
+  color: var(--text-color);
+}
+
+.instruction-form {
+  display: grid;
+
+  grid-template-columns: 50px 1fr auto;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.instruction-form__address,
+.instruction-form__content {
+  border: 0;
+  background-color: unset;
+  color: unset;
+  font-size: unset;
+  font-family: unset;
+}
+
+.instruction-form__address {
+  font-family: var(--code-font);
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--text-color-dark2);
+}
+
+.instruction-form__content {
+  color: var(--text-color);
+}
