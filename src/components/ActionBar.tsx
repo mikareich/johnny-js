@@ -1,12 +1,13 @@
 import React, { useContext } from 'react'
 import '../css/ActionBar.css'
-import { Context, generatePlainProgram } from '../utils/Context'
+import { Context } from '../utils/Context'
+import { generatePlainProgram, syncProgram } from '../utils/program'
 import Executer from '../utils/vm/Executer'
 import VM from '../utils/vm/VirtualMachine'
 import Button from './Button'
 
 function ActionBar() {
-  const { vm, syncProgram, overwriteRAM, setProgram } = useContext(Context)!
+  const { vm, program, overwriteRAM, setProgram } = useContext(Context)!
 
   const resetRAM = () => {
     setProgram(generatePlainProgram())
@@ -22,7 +23,7 @@ function ActionBar() {
     const executer = new Executer(vm)
     executer.run()
 
-    syncProgram()
+    setProgram(syncProgram(vm, program))
   }
 
   return (

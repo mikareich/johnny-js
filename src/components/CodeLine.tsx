@@ -3,10 +3,11 @@ import React, { useEffect, useState, useContext } from 'react'
 import compileProgram, { isComment } from '../utils/vm/compiler'
 import VM, { OperatorNames } from '../utils/vm/VirtualMachine'
 import { decodeInstruction, prettifyCode } from '../utils/vm/encodeInstruction'
-import { CodeLine as ICodeLine, Context } from '../utils/Context'
+import { ProgramLine } from '../utils/program'
+import { Context } from '../utils/Context'
 
 interface CodeLineProps {
-  data: ICodeLine
+  data: ProgramLine
 }
 
 function CodeLine({ data }: CodeLineProps) {

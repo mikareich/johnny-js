@@ -1,9 +1,9 @@
 import React, { useContext, useState, useEffect } from 'react'
 import '../css/Terminal.css'
-import { CodeLine as ICodeLine, Context } from '../utils/Context'
 import compileProgram from '../utils/vm/compiler'
 import VM from '../utils/vm/VirtualMachine'
 import CodeLine from './CodeLine'
+import { Context } from '../utils/Context'
 
 function Terminal() {
   const { selectedAddress, program } = useContext(Context)!

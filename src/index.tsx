@@ -12,7 +12,7 @@ import Stats from './components/Stats'
 import Terminal from './components/Terminal'
 
 function App() {
-  const { setVM, setSelectedAddress } = useContext(Context)!
+  const { setVM, setSelectedAddress, program } = useContext(Context)!
 
   useEffect(() => {
     // set up the VM

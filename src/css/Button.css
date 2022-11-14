@@ -27,6 +27,7 @@
   --btn-color: var(--text-color-dark1);
   text-decoration: underline;
   border: none;
+  padding: 0;
 }
 
 /*TODO: add active,hover and focus style */

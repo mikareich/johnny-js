@@ -21,3 +21,8 @@
   color: var(--text-color-dark1) !important;
   text-decoration: underline;
 }
+
+.navbar__item * {
+  font-size: inherit;
+  color: inherit;
+}
