@@ -8,4 +8,6 @@
   --error-color: #f87171;
 
   --code-font: 'JetBrains Mono', monospace;
+
+  --mobile-breakpoint: 768px;
 }

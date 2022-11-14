@@ -5,3 +5,9 @@
   gap: 20px;
   padding-bottom: 20px;
 }
+
+@media screen and (max-width: 768px) {
+  .action-bar {
+    justify-content: space-between;
+  }
+}

@@ -6,7 +6,7 @@ import VM from '../utils/vm/VirtualMachine'
 function Stats() {
   const { vm } = useContext(Context)!
   return (
-    <section>
+    <section className="stats-section">
       <h1 className="section-title">Stats</h1>
       <div className="stats-container">
         <div className="stat">

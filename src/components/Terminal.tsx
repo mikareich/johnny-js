@@ -28,7 +28,7 @@ function Terminal() {
   }, [selectedAddress])
 
   return (
-    <section>
+    <section className="terminal-section">
       <h1>Memory</h1>
       <div className="code-line">
         <span className="code-line__status">⚡️</span>

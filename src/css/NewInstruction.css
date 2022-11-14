@@ -1,16 +1,11 @@
-.newInstruction {
-  padding: 20px 40px;
-  font-size: 1.25rem;
-  font-family: var(--code-font);
-  color: var(--text-color);
-}
-
 .instruction-form {
   display: grid;
-
-  grid-template-columns: 50px 1fr auto;
+  grid-template-columns: 100px 1fr;
   column-gap: 20px;
   align-items: center;
+
+  padding: 20px 40px;
+  color: var(--text-color);
 }
 
 .instruction-form__address,
@@ -18,8 +13,10 @@
   border: 0;
   background-color: unset;
   color: unset;
-  font-size: unset;
-  font-family: unset;
+  font-size: 1.25rem;
+  font-family: var(--code-font);
+  font-weight: bold;
+  width: 100%;
 }
 
 .instruction-form__address {
@@ -31,4 +28,17 @@
 
 .instruction-form__content {
   color: var(--text-color);
+}
+
+.instruction-form__label {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .instruction-form {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
 }

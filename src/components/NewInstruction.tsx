@@ -43,25 +43,31 @@ function NewInstruction() {
   }, [selectedAddress])
 
   return (
-    <div className="newInstruction">
-      <p>Enter a new instruction:</p>
-      <form className="instruction-form">
+    <form className="instruction-form">
+      <label className="instruction-form__label" htmlFor="instruction-address">
+        Address
         <input
           type="text"
           className="instruction-form__address"
           placeholder="Address"
+          id="instruction-address"
           value={prettifyCode(selectedAddress, 3)}
           onChange={(e) => updateAddress(Number(e.target.value))}
         />
+      </label>
+      <label className="instruction-form__label" htmlFor="instruction-content">
+        Instruction
         <input
           type="text"
           className="instruction-form__content"
           placeholder="Instruction"
+          id="instruction-content"
           value={content}
           onChange={(e) => setContent(e.target.value)}
+          ref={(input) => input && input.focus()}
         />
-      </form>
-    </div>
+      </label>
+    </form>
   )
 }
 
