@@ -10,6 +10,7 @@ import NavBar from './components/NavBar'
 import NewInstruction from './components/NewInstruction'
 import Stats from './components/Stats'
 import Terminal from './components/Terminal'
+import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 
 function App() {
   const { setVM, setSelectedAddress, program } = useContext(Context)!
@@ -47,3 +48,8 @@ root.render(
     </ContextProvider>
   </React.StrictMode>
 )
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://cra.link/PWA
+serviceWorkerRegistration.register()

@@ -38,7 +38,10 @@ function NavBar() {
 
   return (
     <nav className="navbar">
-      <span className="navbar__item-title">⚡️ Johnny JS ⚡️</span>
+      <span className="navbar__item-title">
+        ⚡️ Johnny <span className="navbar__item-title-highlighted">JS</span>{' '}
+        ⚡️
+      </span>
       <span className="navbar__item">
         <Button asLink onClick={loadProgram}>
           📂 Load Code
